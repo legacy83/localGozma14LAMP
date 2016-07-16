@@ -1,0 +1,6 @@
+---
+- name: MySQL Users
+  mysql_user: name=www password=www@secret priv=*.*:ALL state=present
+
+- name: MySQL Databases
+  mysql_db: name=www state=present

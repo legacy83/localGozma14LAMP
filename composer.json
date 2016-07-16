@@ -1,0 +1,28 @@
+{
+  "name": "trsenna/localGozma12LAMP",
+  "description": "Easily vagrant up my gozma12 LAMP stack locally.",
+  "type": "project",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Thiago Senna",
+      "homepage": "http://thremes.com.br"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/trsenna/localGozma12LAMP/issues",
+    "source": "https://github.com/trsenna/localGozma12LAMP"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/trsenna/gozma12"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  },
+  "require-dev": {
+    "trsenna/gozma12": "0.6.0"
+  }
+}
