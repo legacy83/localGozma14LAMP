@@ -1,5 +1,5 @@
 {
-  "name": "trsenna/localGozma12LAMP",
+  "name": "trsenna/localGozma14LAMP",
   "description": "Easily vagrant up my gozma14 LAMP stack locally.",
   "type": "project",
   "license": "GPL-2.0+",
@@ -10,8 +10,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/trsenna/localGozma12LAMP/issues",
-    "source": "https://github.com/trsenna/localGozma12LAMP"
+    "issues": "https://github.com/trsenna/localGozma14LAMP/issues",
+    "source": "https://github.com/trsenna/localGozma14LAMP"
   },
   "repositories": [
     {
