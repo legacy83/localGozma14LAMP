@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "647e24af71e176d97bca4457f5fdfe94",
+    "content-hash": "6a69b522d17afeec1f5786cb12c810c7",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "trsenna/gozma14",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trsenna/gozma14.git",
+                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "shasum": ""
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Senna",
+                    "homepage": "http://thremes.com.br"
+                }
+            ],
+            "description": "Easily vagrant up ubuntu/trusty64 machines with ansible roles.",
+            "support": {
+                "issues": "https://github.com/trsenna/gozma14/issues",
+                "source": "https://github.com/trsenna/gozma14"
+            },
+            "time": "2016-07-15 00:43:01"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": []
+}
