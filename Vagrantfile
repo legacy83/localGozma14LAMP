@@ -7,10 +7,10 @@ Vagrant.configure("2") do |config|
         gozma14.vm.box = "geerlingguy/ubuntu1404"
         gozma14.vm.hostname = "gozma14"
         gozma14.vm.network "private_network", ip: "192.168.27.14"
-        config.vm.synced_folder "sites/gozma14.local/", "/var/www/gozma14.local/public_html"
-        config.vm.synced_folder "sites/adminer.gozma14.local/", "/var/www/adminer.gozma14.local/public_html"
-        config.vm.synced_folder "sites/www.gozma14.local/", "/var/www/www.gozma14.local/public_html"
-        config.vm.provision "ansible" do |ansible|
+        gozma14.vm.synced_folder "sites/gozma14.local/", "/var/www/gozma14.local/public_html"
+        gozma14.vm.synced_folder "sites/adminer.gozma14.local/", "/var/www/adminer.gozma14.local/public_html"
+        gozma14.vm.synced_folder "sites/www.gozma14.local/", "/var/www/www.gozma14.local/public_html"
+        gozma14.vm.provision "ansible" do |ansible|
             ansible.playbook = "playbook.yml"
         end
     end
