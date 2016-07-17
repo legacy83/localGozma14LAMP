@@ -1,0 +1,23 @@
+---
+- name: Public Log Directories
+  file:
+    path: "/var/www/{{ item }}/logs"
+    state: directory
+  with_items:
+    - gozma14.local
+    - adminer.gozma14.local
+    - www.gozma14.local
+
+- name: Public Html Directories
+  file:
+    path: "/var/www/{{ item }}/public_html"
+    state: directory
+  with_items:
+    - gozma14.local
+    - adminer.gozma14.local
+
+- name: Public Html Link
+  file:
+    src: /vagrant/public_html
+    dest: /var/www/www.gozma14.local/public_html
+    state: link
