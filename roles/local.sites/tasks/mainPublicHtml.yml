@@ -1,5 +1,5 @@
 ---
-- name: Public Log Directories
+- name: Log Directories
   file:
     path: "/var/www/{{ item }}/logs"
     state: directory
