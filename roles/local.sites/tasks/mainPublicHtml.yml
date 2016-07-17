@@ -11,11 +11,11 @@
     - www.gozma14.local
 
 - name: Public Html Directories
-  file:
-    path: "/var/www/{{ item }}/public_html"
+  copy:
+    src: "public_html/{{ item }}/"
+    dest: /var/www/{{ item }}/public_html
     owner: vagrant
     group: vagrant
-    state: directory
   with_items:
     - gozma14.local
     - adminer.gozma14.local
