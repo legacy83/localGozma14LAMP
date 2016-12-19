@@ -4,22 +4,22 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "647e24af71e176d97bca4457f5fdfe94",
-    "content-hash": "6a69b522d17afeec1f5786cb12c810c7",
+    "hash": "dbf151eeb0ae14c6025621dec57a66a4",
+    "content-hash": "6311dcaaf5464b61d8dc06ae95429bac",
     "packages": [],
     "packages-dev": [
         {
             "name": "trsenna/gozma14",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trsenna/gozma14.git",
-                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb"
+                "reference": "8a211781690a7262a1a3950f5eb116477d03e666"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/012c24e72b8820bb71a04ab832611d01a4ac6feb",
-                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/8a211781690a7262a1a3950f5eb116477d03e666",
+                "reference": "8a211781690a7262a1a3950f5eb116477d03e666",
                 "shasum": ""
             },
             "type": "project",
@@ -37,7 +37,7 @@
                 "issues": "https://github.com/trsenna/gozma14/issues",
                 "source": "https://github.com/trsenna/gozma14"
             },
-            "time": "2016-07-15 00:43:01"
+            "time": "2016-12-19 17:54:18"
         }
     ],
     "aliases": [],
