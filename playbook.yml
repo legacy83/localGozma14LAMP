@@ -1,0 +1,34 @@
+---
+- hosts: all
+  become: yes
+
+  pre_tasks:
+    - name: System Update
+      apt: update_cache=yes cache_valid_time=3600
+
+  roles:
+    - vendor/trsenna/gozma14/roles/stack.lamp
+    - vendor/trsenna/gozma14/roles/local.dev
+
+  tasks:
+    - name: MySQL Users
+      mysql_user: name=www password=www@secret priv=*.*:ALL state=present
+
+    - name: MySQL Databases
+      mysql_db: name=www state=present
+
+    - name: Check Public Html Status
+      stat: path=/var/www/www.gozma14.local/public_html
+      register: public_html
+
+    - name: Remove Current Public Html Folder
+      file: path=/var/www/www.gozma14.local/public_html state=absent
+      when: public_html.stat.islnk is defined and public_html.stat.islnk == False
+
+    - name: Public Html Link
+      file:
+        src: /vagrant/public_html
+        dest: /var/www/www.gozma14.local/public_html
+        owner: vagrant
+        group: vagrant
+        state: link
